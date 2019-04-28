@@ -1,0 +1,133 @@
+body{
+    background-color: #100c43;
+}
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 68px;
+    background: rgba(0,0,0,0.6);
+    padding: 0 100px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-weight: bolder;
+}
+
+nav .brand {
+    float: left;
+    height: 100%;
+    line-height: 70px;  
+}
+
+nav .brand h2 {
+    margin-top: 5px;
+    padding: 0;
+    color: #fff;
+    font-family: 'Press Start 2P', cursive;
+    position: absolute;
+    top: 0;
+    left: 15%;
+
+}
+
+nav ul {
+    float: right;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    top: 5%;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    position: relative;
+    display: block;
+    height: 70px;
+    line-height: 70px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+nav ul li a:hover {
+    color: #262626;
+}
+
+nav ul li a:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: #fff;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .7s;
+}
+
+nav ul li a:hover:before {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+#pong{
+    border: 2px solid #FFF;
+    position: absolute;
+    margin-bottom: 50px;
+    top: 145%;
+    right:0;
+    left:28%;
+    bottom:0;
+
+
+}
+.ping {
+    box-shadow: 0 0 20px #949494;
+    padding: 15px;
+    background: #fff;
+    border-radius: 5px;
+    top: 23%;
+}
+.title {
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+    margin: 70px;
+}
+.text {
+    margin: 25px;
+    font-family: 'Press Start 2P', cursive;
+    text-align: justify;
+    text-indent: 15px;
+    color: white;
+    line-height: 1.5;
+}
+#dir {
+    margin-top: 65px;
+    margin-bottom: 45px;
+}
+
+section {
+    height: 7px;
+    background: #fff;
+    width: 97vw;
+    margin-left: 5px;
+}
+h5 {
+    color: black;
+    padding: 15px;
+    margin: 3px;
+    background: #fff;
+    text-align: center;
+}
+footer {
+    margin-top: 500px;
+
+}
